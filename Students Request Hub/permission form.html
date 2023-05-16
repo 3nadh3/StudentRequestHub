@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px #ccc;
+			max-width: 500px;
+			margin: 20px auto;
+		}
+		h2 {
+			text-align: center;
+			margin-top: 0;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		select {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			font-size: 16px;
+			background-color: #fff;
+			resize: none;
+		}
+		select {
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23444' d='M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.error {
+			color: red;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 600px) {
+			form {
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row justify-content-center">
+            <img src="img.jpg" alt="sir CR Reddy college of enginerring" class="img-fluid m-3">
+        </div>
+    </div>
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<form method="post" action="permission for.php">
+					<h2 class="mb-3 fw-bold"> Permission Form</h2>
+                    <br>
+					<div class="mb-3">
+						<label for="register_number" class="form-label">Register Number:</label>
+						<input type="text" id="register_number" name="register_number" class="form-control" required>
+					</div>
+					<div class="mb-3">
+						<label for="name" class="form-label">Name:</label>
+						<input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Department:</label>
+                       <select  id="department" name="department" class="form-select " required>
+                        <option value="Information Technology">Information Technology</option>
+                        
+                        
+                    </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="year" class="form-label required">Year:</label>
+                        <select id="year" name="year" class="form-select" required>
+                            <option value="">Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="section" class="form-label required">Section:</label>
+                        <select id="section" name="section" class="form-select" required>
+                            <option value="">Select Section</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                     <label for="type_of_letter">Type of Letter:</label>
+                    <select name="type_of_letter" id="type_of_letter" required>
+                        <option value="">Select Type of Letter</option>
+                        <option value="fees">Fees</option>
+                        <option value="Uniform">Uniform</option>
+                        <option value="absent">Absent</option>
+                        <option value="remarks">Remarks</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="reason">Reason:</label>
+                    <textarea name="reason" id="reason" rows="4" cols="54" required></textarea>
+                </div>
+                    <br>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-SdJ7z6/eF9I9VRU6SsSyu1E7sHRa/hvA8OSwWnkg/ZG7VpTcJvT8/LnW+gnOnZYApgNbdNq3qMtwlrWZt/ED7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        </body>
+        </html>
+					
